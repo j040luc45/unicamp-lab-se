@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule (^|/)libs(/|$) - [F]
+RewriteRule (^|/)models(/|$) - [F]
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?request=$1 [QSA]
+# Or, compress certain file types by extension:
+Options -Indexes
